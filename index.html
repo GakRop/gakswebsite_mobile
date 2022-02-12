@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MyPageMobile</title>
+    <link rel = "stylesheet" href = "css/index.css">
+    <style>
+        img{
+            float: left;
+        }
+    </style>
+
+</head>
+<body>
+<div class = "location">
+    <div class = "openbutton" onclick="openNav()">▷</div>
+
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">◁</a>
+
+        <div class = "content">
+        <h1>Email</h1>
+            <br>
+            <div class = "icon">
+                <a href = "https://outlook.office365.com/mail/inbox" target = "_blank"><img src = "img/outlook.png" alt = "OutLook"></a>
+                <a href = "https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox" target = "_blank"><img src = "img/gmail.png" alt = "Gmail"></a>
+            </div>
+        </div>
+        <br>
+        <div class = "content">
+        <h1>Social Media</h1>
+            <br>
+            <div class = "icon">
+                <a href = "https://newspicks.com/" target = "_blank"><img src = "img/newspicks.png" alt = "NewsPicks"></a>
+                <a href = "https://www.facebook.com/" target = "_blank"><img src = "img/facebook.png" alt = "FaceBook"></a>
+                <a href = "https://www.instagram.com/" target = "_blank"><img src = "img/instagram.png" alt = "Instagram"></a>
+                <a href = "https://discord.com/channels/@me" target = "_blank"><img src = "img/discord.png" alt = "Discord"></a>
+                <br>
+                <a href = "https://www.hinatazaka46.com/s/official/diary/member" target = "_blank"><img src = "img/Hinatazaka46.png" alt = "日向坂46　オフィシャルブログ"></a>
+                <a href = "https://www.coinbase.com/dashboard" target = "_blank"><img src = "img/coinbase.png" alt = "Coinbase"></a>
+                <a href = "https://twitter.com/home" target = "_blank"><img src = "img/twitter.png" alt = "Twitter"></a>
+            </div>
+        </div>
+        <br>
+        <div class = "content">
+        <h1>Work</h1>
+            <br>
+            <div class = "icon">
+                <a href = "https://www.linkedin.com/feed/" target = "_blank"><img src = "img/linkedin.png" alt = "LinkedIn"></a>
+                <a href = "https://montana.joinhandshake.com/" target = "_blank"><img src = "img/handshake.png" alt = "Handshake"></a>
+                <a href = "https://gaishishukatsu.com/" target = "_blank"><img src = "img/gaishi.png" alt = "外資就活"></a>
+                <a href = "https://www.wantedly.com/projects" target = "_blank"><img src = "img/wantedly.png" alt = "Wantedly"></a>
+                <br>
+                <a href = "https://www.onecareer.jp/" target = "_blank"><img src = "img/onecareer.png" alt = "One Career"></a>
+            </div>
+        </div>
+        <br>
+        <div class = "content">
+        <h1>Files</h1>
+            <br>
+            <div class = "icon">
+                <a href = "https://montana.app.box.com/folder/0" target = "_blank"><img src = "img/box.png" alt = "Box"></a>
+                <a href = "https://drive.google.com/drive/u/0/my-drive" target = "_blank"><img src = "img/googledrive.png" alt = "Google Drive"></a>
+                <a href = "https://photos.google.com/?tab=rq&pageId=none" target = "_blank"><img src = "img/googlephoto.png" alt = "Google Photo"></a>
+            </div>
+        </div>
+        <br>
+        <div class = "content">
+        <h1>School</h1>
+            <br>
+            <div class = "icon">
+                <a href = "https://ecat1.montana.edu/" target = "_blank"><img src = "img/d2l.png" alt = "D2L"></a>
+                <a href = "https://www.montana.edu/" target = "_blank"><img src = "img/msu.png" alt = "MSU homepage"></a>
+                <a href = "https://www.gradescope.com/" target = "_blank"><img src = "img/gradescope.png" alt = "GradeScope"></a>
+            </div>
+        </div>
+        <br>
+        <div class = "content">
+        <h1>Entertainment</h1>
+            <br>
+            <div class = "icon">
+                <a href = "https://www.youtube.com/" target = "_blank"><img src = "img/youtube.png" alt = "YouTube"></a>
+                <a href = "https://www.netflix.com/browse" target = "_blank"><img src = "img/netflix.png" alt = "NetFlix"></a>
+                <a href = "https://www.amazon.com/Prime-Video/b?node=2676882011" target = "_blank"><img src = "img/amazonprimevideo.png" alt = "Amazon Prime Video"></a>
+                <a href = "https://f1tv.formula1.com/" target = "_blank"><img src = "img/f1logo.png" alt = "F1 TV"></a>
+                <br>
+                <a href = "https://open.spotify.com/?_ga=2.1918897.1808852671.1631834913-1611388462.1629843814" target = "_blank"><img src = "img/spotify.png" alt = "Spotify"></a>
+                <a href = "https://n46v.com/hinatazaka46/" target = "_blank"><img src = "img/Hinatazaka46.png" alt = "Hinatazaka 46 videos"></a>
+                <a href = "https://innerfrench.com/" target = "_blank"><img src = "img/french.png" alt = "French Podcast"></a>
+                <a href = "https://abema.tv/" target = "_blank"><img src = "img/abema.png" alt = "Abema TV"></a>
+            </div>
+        </div>
+    </div>
+
+    <div class = "clock">
+        <div class = "day" id = "dayBozeman"></div>
+        <div class = "date" id = "dateBozeman"></div>
+    </div>
+
+    <div class = "clock">
+        Bozeman
+        <div class = "time" id = "timeBozeman"></div>
+    </div>
+
+    <div class = "clock">
+        Tokyo
+        <div class = "time" id = "timeTokyo"></div>
+    </div>
+
+    <div class = "clock">
+        London
+        <div class = "time" id = "timeLondon"></div>
+    </div>
+</div>
+<br>
+<div class = "search">
+    <form action = "https://www.google.com/search" method = "get">
+        <input type = "text" name = "q" class = "searchbar"/>
+        <input type="image" src = "img/searchison.png" alt = "search ion" value = "submit" class = "searchbutton"/>
+    </form>
+</div>
+<br>
+<div class = "header">
+    <iframe class = "nikkei" src = "https://www.nikkei.com/" title = "Nikkei"></iframe>
+    <iframe class = "d2l" src = "https://ecat1.montana.edu/" title = "coinbas"></iframe>
+</div>
+<br>
+<script src = "javascript/index.js"></script>
+</body>
+</html>
